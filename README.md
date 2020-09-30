@@ -1,4 +1,5 @@
 # Image Supersampling Library
+![GitHub](https://img.shields.io/github/license/shengtanmao/supersampling-library)
 
 ## Project Idea: 
 Build a library for Python that supports the up-scaling of images.

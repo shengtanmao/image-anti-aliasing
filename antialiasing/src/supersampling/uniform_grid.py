@@ -3,7 +3,7 @@
 import numpy as np
 
 #significantly worse for non-integer factor
-def unif_grid(array, factor=2):
+def unif_grid(array, factor):
     old_shape=array.shape
     new_arr=np.zeros((int(old_shape[0]*factor),int(old_shape[1]*factor),3),np.uint8)
     new_shape=new_arr.shape

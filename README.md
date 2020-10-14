@@ -1,5 +1,6 @@
 # Image Anti-Aliasing Library
-![GitHub](https://img.shields.io/github/license/shengtanmao/supersampling-library)
+![GitHub](https://img.shields.io/github/license/shengtanmao/image-anti-aliasing)
+![GitHub](https://img.shields.io/travis/shengtanmao/image-anti-aliasing)
 
 ## Project Idea: 
 Build a library for Python that supports the up-scaling of images.

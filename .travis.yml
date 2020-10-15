@@ -6,7 +6,7 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - python -m pytest -vvv antialiasing/ --cov antialiasing
+  - python -m pytest -vvv antialiasing/ --cov antialiasing/src
 
 after_success:
   - codecov

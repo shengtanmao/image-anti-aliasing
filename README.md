@@ -1,5 +1,5 @@
 # Image Anti-Aliasing Library
-![GitHub](https://img.shields.io/github/license/shengtanmao/image-anti-aliasing)
+[![License](https://img.shields.io/github/license/shengtanmao/image-anti-aliasing)](http://www.gnu.org/licenses/gpl-3.0.en.html)
 [![Build Status](https://travis-ci.org/shengtanmao/image-anti-aliasing.svg?branch=master)](https://travis-ci.org/shengtanmao/image-anti-aliasing)
 [![Codecov](https://img.shields.io/codecov/c/gh/shengtanmao/image-anti-aliasing)](https://codecov.io/gh/shengtanmao/image-anti-aliasing)
 

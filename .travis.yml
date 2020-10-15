@@ -1,12 +1,16 @@
 language: python
 python:
-  - "3.8"
+  - "3.6"
 
 install:
   - pip install -r requirements.txt
 
-before_script:
-  - export PYTHONPATH=$PYTHONPATH:$(pwd)/antialiasing
-
 script:
-  - pytest
+  - python -m pytest -vvv antialiasing/ --cov antialiasing
+
+after_success:
+  - codecov
+
+branches:
+  only:
+    - master

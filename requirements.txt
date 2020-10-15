@@ -1,2 +1,6 @@
 numpy
 Pillow
+flake8
+codecov
+pytest
+pytest-cov

@@ -5,8 +5,11 @@ python:
 install:
   - pip install -r requirements.txt
 
+before_script:
+  - export PYTHONPATH=$PYTHONPATH:$(pwd)/antialiasing
+
 script:
-  - python -m pytest -vvv antialiasing/ --cov antialiasing/src
+  - pytest --cov=antialiasing/src
 
 after_success:
   - codecov

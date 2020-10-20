@@ -3,22 +3,28 @@ import pathlib as pl
 import numpy as np
 
 images_path = pl.Path('./antialiasing/tests/images')
-array=imp(images_path / "triangle.jpeg")
+array = imp(images_path / "triangle.jpeg")
 
-#test imported image has valid datatype
+# test imported image has valid datatype
+
+
 def test_valid_type():
-    assert(array.dtype==np.uint8)
+    assert(array.dtype == np.uint8)
 
-#tests imported image has valid array shape
+# tests imported image has valid array shape
+
+
 def test_valid_shape():
-    shape=array.shape
-    assert(shape[0]>0 and shape[1]>0 and shape[2]==3)
+    shape = array.shape
+    assert(shape[0] > 0 and shape[1] > 0 and shape[2] == 3)
 
-#tests imported image has valid values
+# tests imported image has valid values
+
+
 def test_valid_val():
-    shape=array.shape
+    shape = array.shape
     for i in range(shape[0]):
         for j in range(shape[1]):
             for k in range(shape[2]):
-                test_val=array[i][j][k]
-                assert test_val<256 and test_val>=0
+                test_val = array[i][j][k]
+                assert test_val < 256 and test_val >= 0

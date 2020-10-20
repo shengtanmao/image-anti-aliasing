@@ -10,6 +10,7 @@ before_script:
 
 script:
   - pytest --cov=antialiasing/src
+  - flake8 antialiasing/src
 
 after_success:
   - codecov

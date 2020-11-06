@@ -2,6 +2,7 @@
 [![License](https://img.shields.io/github/license/shengtanmao/image-anti-aliasing)](http://www.gnu.org/licenses/gpl-3.0.en.html)
 [![Build Status](https://travis-ci.org/shengtanmao/image-anti-aliasing.svg?branch=master)](https://travis-ci.org/shengtanmao/image-anti-aliasing)
 [![Codecov](https://img.shields.io/codecov/c/gh/shengtanmao/image-anti-aliasing)](https://codecov.io/gh/shengtanmao/image-anti-aliasing)
+[![Docs](https://img.shields.io/readthedocs/image-anti-aliasing.svg)](https://image-anti-aliasing.readthedocs.io)
 
 ## Description
 A Python library that provides algorithms for upscaling images.
@@ -17,6 +18,3 @@ This library provides numerous algorithm that are easy to use:
 
 ## License
 [GPL 3.0](http://www.gnu.org/licenses/gpl-3.0.en.html)
-
-## Documentation
-The latest documentation is hosted on https://image-anti-aliasing.readthedocs.io/en/latest/

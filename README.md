@@ -18,7 +18,6 @@ This library provides numerous filtering algorithm:
 1. Download the repository.
 2. Place the repository in the folder where usage is required.
 3. Install the dependencies outlined in requirements.txt.
-4. execute "export PYTHONPATH=$PYTHONPATH:$(pwd)/antialiasing" in terminal.
 
 ## License
 [GPL 3.0](http://www.gnu.org/licenses/gpl-3.0.en.html)

@@ -12,6 +12,14 @@ src.supersampling.uniform\_grid module
    :undoc-members:
    :show-inheritance:
 
+src.supersampling.uniform\_grid\_2 module
+-----------------------------------------
+
+.. automodule:: src.supersampling.uniform_grid_2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

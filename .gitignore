@@ -1,3 +1,6 @@
 __pycache__
 .pytest_cache
 informal_tests.py
+docs/_build
+docs/_static
+docs/_templates

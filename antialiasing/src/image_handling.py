@@ -2,18 +2,28 @@
 import PIL.Image as im
 import numpy as np
 
-# import image as a numpy array
-# parameters: file name
-# returns the 3-dim numpy array representing the image
-
 
 def imp(file):
-    return np.asarray(im.open(file))
+    """
+    Imports an image as a numpy array.
 
-# export numpy array as image
-# parameters: numpy array representing the image, file name to save
-# return: none
+    :param file: file path
+    :type file: string
+    
+    :return: a three dimesional numpy array representing the image
+    :rtype: ndarray
+    """
+    return np.asarray(im.open(file))
 
 
 def exp(array, file):
+    """
+    Exports an a numpy array and saves it as the file indicated.
+
+    :param array: a three dimesional numpy array representing the image
+    :type array: ndarray
+
+    :param file: file path
+    :type file: string
+    """
     im.fromarray(array).save(file)

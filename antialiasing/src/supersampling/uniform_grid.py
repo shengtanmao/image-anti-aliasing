@@ -6,6 +6,16 @@ import numpy as np
 
 
 def unif_grid(array, factor):
+    """
+    Scales an image by a factor using uniform using the grid algorithm in uniform distribution. 
+    Note: the result is significantly worse for non-integer factors.
+
+    :param array: a numpy array representing the image
+    :type file: ndarray
+    
+    :return: a numpy array representing the scaled image
+    :rtype: ndarray
+    """
     old_shape = array.shape
     new_arr = np.zeros(
         (int(old_shape[0]*factor), int(old_shape[1]*factor), 3), np.uint8)

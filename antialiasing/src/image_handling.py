@@ -9,7 +9,7 @@ def imp(file):
 
     :param file: file path
     :type file: string
-    
+
     :return: a three dimesional numpy array representing the image
     :rtype: ndarray
     """

@@ -1,5 +1,6 @@
 from src.image_handling import imp
 from src.supersampling.uniform_grid import unif_grid
+from src.supersampling.uniform_grid_2 import unif_grid_2
 import pathlib as pl
 import numpy as np
 
@@ -26,6 +27,32 @@ def test_unit_grid_type():
 
 def test_unit_grid_val():
     new_arr = unif_grid(array, 1.5)
+    new_shape = new_arr.shape
+    for i in range(new_shape[0]):
+        for j in range(new_shape[1]):
+            for k in range(shape[2]):
+                test_val = new_arr[i][j][k]
+                assert test_val < 256 and test_val >= 0
+
+
+def test_unif_grid_2_shape():
+    factor = 1.5
+    new_arr = unif_grid_2(array, factor)
+    new_shape = new_arr.shape
+    assert (
+        int(shape[0] * factor) == new_shape[0]
+        and int(shape[1] * factor) == new_shape[1]
+        and new_shape[2] == 3
+    )
+
+
+def test_unit_grid_type():
+    new_arr = unif_grid_2(array, 1.5)
+    assert new_arr.dtype == np.uint8
+
+
+def test_unit_grid_val():
+    new_arr = unif_grid_2(array, 1.5)
     new_shape = new_arr.shape
     for i in range(new_shape[0]):
         for j in range(new_shape[1]):

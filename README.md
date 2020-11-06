@@ -19,4 +19,4 @@ This library provides numerous algorithm that are easy to use:
 [GPL 3.0](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ## Documentation
-The latest documentation is hosted on https://image-anti-aliasing.readthedocs.io/en/latest
+The latest documentation is hosted on https://image-anti-aliasing.readthedocs.io/en/latest/

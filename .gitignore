@@ -4,3 +4,4 @@ informal_tests.py
 docs/_build
 docs/_static
 docs/_templates
+.ipynb_checkpoints

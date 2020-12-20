@@ -8,7 +8,7 @@ import numpy as np
 
 def bicub_val(m):
     """
-    computation for bicubic interpolation
+    Compututes derivatives to calculate coefficients.
 
     :m: 4 by 4 matrix
     :type file: ndarray
@@ -38,7 +38,7 @@ def bicub_val(m):
 
 def compute_coeff(col):
     """
-    computes coefficients for bicubic interpolation
+    Computes coefficients for bicubic interpolation.
 
     :col: a numpy array representing a single color
     :type file: ndarray
@@ -58,7 +58,7 @@ def compute_coeff(col):
 
 def bicub_inter(array, factor):
     """
-    Scales an image by a factor using bicubic interpolation
+    Scales an image by a factor using bicubic interpolation.
 
     :param array: a numpy array representing the image
     :type file: ndarray
@@ -69,7 +69,7 @@ def bicub_inter(array, factor):
     old_shape = array.shape
     new_arr = np.zeros(
         (round(old_shape[0] * factor), round(old_shape[1] * factor), 3),
-        np.uint8)
+        np.int16)
     new_shape = new_arr.shape
     coeffs = []
     coeffs.append(compute_coeff(array[:, :, 0]))

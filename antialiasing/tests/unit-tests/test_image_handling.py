@@ -1,4 +1,6 @@
 from src.image_handling import imp
+from src.image_handling import score
+from src.supersampling.uniform_grid import unif_grid
 import pathlib as pl
 import numpy as np
 
@@ -28,3 +30,10 @@ def test_valid_val():
             for k in range(shape[2]):
                 test_val = array[i][j][k]
                 assert test_val < 256 and test_val >= 0
+
+
+def test_valid_score():
+    small = unif_grid(array, 0.5)
+    modified = unif_grid(small, 2)
+    s = score(array, modified)
+    assert s >= 0 and s <= 255

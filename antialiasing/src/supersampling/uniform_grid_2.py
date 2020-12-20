@@ -20,7 +20,7 @@ def unif_grid_2(array, factor):
     old_shape = array.shape
     new_arr = np.zeros(
         (round(old_shape[0] * factor), round(old_shape[1] * factor), 3),
-        np.uint8)
+        np.int16)
     new_shape = new_arr.shape
     for i in range(new_shape[0]):
         for j in range(new_shape[1]):

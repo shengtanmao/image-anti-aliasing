@@ -20,6 +20,14 @@ src.supersampling.uniform\_grid\_2 module
    :undoc-members:
    :show-inheritance:
 
+src.supersampling.bicubic module
+-----------------------------------------
+
+.. automodule:: src.supersampling.bicubic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

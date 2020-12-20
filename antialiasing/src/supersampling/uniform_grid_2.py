@@ -10,6 +10,7 @@ def unif_grid_2(array, factor):
     """
     Scales an image by a factor using uniform using the grid algorithm in
     uniform distribution.
+    (Bilinear interpolation)
 
     :param array: a numpy array representing the image
     :type file: ndarray

@@ -10,6 +10,7 @@ def unif_grid(array, factor):
     Scales an image by a factor using uniform using the grid algorithm in
     uniform distribution.
     Note: the result is significantly worse for non-integer factors.
+    (Nearest-neighbor interpolation)
 
     :param array: a numpy array representing the image
     :type file: ndarray

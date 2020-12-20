@@ -8,11 +8,10 @@
 A Python library that provides algorithms for upscaling images.
 
 ## Features
-This library provides numerous super-sampling algorithm:
-  - grid algorithm in uniform distribution
-
-This library provides numerous filtering algorithm:
-  - (to be added)
+This library provides image scaling algorithm:
+  - Nearest-neighbor interpolation
+  - Bilinear interpolation
+  - Bicubic interpolation
 
 ## Installation
 1. Download the repository.

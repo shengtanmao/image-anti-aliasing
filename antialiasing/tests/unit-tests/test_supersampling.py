@@ -46,12 +46,12 @@ def test_unif_grid_2_shape():
     )
 
 
-def test_unit_grid_type():
+def test_unit_grid_2_type():
     new_arr = unif_grid_2(array, 1.5)
     assert new_arr.dtype == np.uint8
 
 
-def test_unit_grid_val():
+def test_unit_grid_2_val():
     new_arr = unif_grid_2(array, 1.5)
     new_shape = new_arr.shape
     for i in range(new_shape[0]):

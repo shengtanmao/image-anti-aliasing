@@ -9,7 +9,7 @@ array = imp(images_path / "triangle.jpeg")
 
 
 def test_valid_type():
-    assert(array.dtype == np.uint8)
+    assert(array.dtype == np.int16)
 
 # tests imported image has valid array shape
 

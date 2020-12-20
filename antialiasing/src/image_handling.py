@@ -13,7 +13,7 @@ def imp(file):
     :return: a three dimesional numpy array representing the image
     :rtype: ndarray
     """
-    return np.asarray(im.open(file))
+    return np.asarray(im.open(file), dtype=np.intc)
 
 
 def exp(array, file):
